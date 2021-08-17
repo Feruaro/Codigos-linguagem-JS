@@ -1,0 +1,15 @@
+
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+    var x = 1, y = 7;
+    
+    for(var i=0; i<5; i++){
+        for(var j=0; j<3; j++){
+            console.log("I=" + x + " J=" + y);
+            y--;
+        }
+        x += 2;
+        y += 5;
+    }
